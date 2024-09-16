@@ -41,8 +41,12 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
-
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+    print(result)
+    return(result)
 
 T = TypeVar("T")
 
@@ -58,9 +62,9 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    return lst[::2]
 
-
+    
 def sum_list(lst: List[int]) -> int:
     """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
     use the built in function `sum`.
@@ -71,7 +75,11 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    s = 0
+    for el in lst: 
+        s += el
+    return s
+
 
 
 def mean(lst: List[int]) -> float:
@@ -133,6 +141,9 @@ if __name__ == "__main__":
         5,
     ], "every_other of [1,2,3,4,5] failed"
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
+    assert sum_list([]) == 0, "sum_list of [] failed"
+    assert sum_list([1, 2, 3, 4]) == 10, "sum_list of [1,2,3,4] failed"
+
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
 

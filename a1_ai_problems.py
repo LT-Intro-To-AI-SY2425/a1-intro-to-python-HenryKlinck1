@@ -16,4 +16,18 @@ assert fizbuzz(4) == 4, "fizzbuzz 4 test"
 assert fizbuzz(5) == "Buzz", "fizzbuzz 5 test"
 assert fizbuzz(6) == "Fizz", "fizzbuzz 6 test"
 assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
+print("all tests good")
 
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def calculate():
+    try:
+        celsius = float(input("Enter temperature in Celsius: "))
+        fahrenheit = celsius_to_fahrenheit(celsius)
+        print(f"{celsius}°C is equal to {fahrenheit}°F")
+    except ValueError:
+        print("use a real number.")
+
+if __name__ == "__main__":
+    calculate()

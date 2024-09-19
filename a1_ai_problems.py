@@ -31,3 +31,13 @@ def calculate():
 
 if __name__ == "__main__":
     calculate()
+
+def sum_of_digits(n):
+    return sum(int(digit) for digit in str(n))
+    result = sum_of_digits(number)
+    print(f"The sum of the digits of {number} is {result}.")
+
+    
+    assert sum_of_digits[1,2,3] == 6, "sum of digits failed"
+
+

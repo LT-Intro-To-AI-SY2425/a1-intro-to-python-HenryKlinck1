@@ -18,26 +18,28 @@ assert fizbuzz(6) == "Fizz", "fizzbuzz 6 test"
 assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
 print("all tests good")
 
-def celsius_to_fahrenheit(celsius):
+def celsius_calculation(celsius):
     return (celsius * 9/5) + 32
 
 def calculate():
-    try:
-        celsius = float(input("Enter temperature in Celsius: "))
-        fahrenheit = celsius_to_fahrenheit(celsius)
-        print(f"{celsius}°C is equal to {fahrenheit}°F")
-    except ValueError:
+    celcius = 0
+    celsius = float(input("Enter temperature in Celsius: "))
+    while celcius != 0
+        fahrenheit = celsius_calculation(celsius)
+        print(celcius_calculation)
+    else:
         print("use a real number.")
 
-if __name__ == "__main__":
-    calculate()
+
+
 
 def sum_of_digits(n):
-    return sum(int(digit) for digit in str(n))
+    lst = []
+    return sum(int(digit) for digit in lst(n))
     result = sum_of_digits(number)
-    print(f"The sum of the digits of {number} is {result}.")
+    print("The sum of the digits of {number} is {result}.")
 
-    
-    assert sum_of_digits[1,2,3] == 6, "sum of digits failed"
+assert sum_of_digits[1,2,3] == 6, "sum of digits failed"
+print("test worked")
 
 

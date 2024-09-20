@@ -151,7 +151,7 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
         if i == len(lst):
             i=0
 
-        return lst
+    return lst
 
 # this line causes the nested code to be skipped if the file is imported instead of run
 if __name__ == "__main__":
